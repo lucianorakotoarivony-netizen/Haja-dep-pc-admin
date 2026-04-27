@@ -90,7 +90,6 @@ DATABASES = {
     'default': dj_database_url.config(default=f'sqlite:///{BASE_DIR / "db.sqlite3"}')
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
 
@@ -127,6 +126,7 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 FILER_STORAGES = {
     'public': {
