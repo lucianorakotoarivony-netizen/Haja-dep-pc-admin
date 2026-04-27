@@ -1,0 +1,51 @@
+# Environnement virtuel
+venv/
+env/
+.env
+.venv
+
+# Fichiers sensibles
+.env
+*.local
+*.secret
+
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static/
+
+# Fichiers de migration (optionnel - à discuter)
+# core/migrations/*.py
+# !core/migrations/__init__.py
+
+# Sauvegardes
+*.bak
+*.backup
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Tests
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Déploiement
+*.pid
+*.sock
